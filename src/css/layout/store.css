@@ -172,14 +172,14 @@
   color: #ffffff;
 
   border-radius: 38px;
-
-  animation: pulse;
-
-  transition: background-color 500ms linear;
 }
 
 .store-button:hover {
   background-color: #e25b41;
+
+  animation: pulse;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
 }
 
 @media screen and (min-width: 768px) {

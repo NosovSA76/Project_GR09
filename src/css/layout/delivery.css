@@ -4,20 +4,64 @@
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .delivery-section {
+    padding-top: 100px;
+    padding-bottom: calc(40px + 264px + 100px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-section {
+    padding-top: 100px;
+    padding-bottom: calc(60px + 391px + 100px);
+  }
+}
+
 .delivery-container {
   padding-left: 16px;
   padding-right: 16px;
-  width: calc(100% - 20px * 2);
+  width: calc(320px - 16px * 2);
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .delivery-container {
+    width: 288px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .delivery-container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-container {
+    width: 1232px;
+  }
 }
 
 .delivery-title {
   position: relative;
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
   text-transform: uppercase;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .delivery-title {
+    font-size: 44px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-title {
+    margin-bottom: 80px;
+  }
 }
 
 .delivery-title::after {
@@ -32,10 +76,51 @@
   background-color: #000;
 }
 
+@media screen and (min-width: 320px) {
+  .delivery-title::after {
+    width: 148px;
+    left: calc(126px + 14px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .delivery-title::after {
+    width: 473px;
+    left: calc(231px + 16px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-title::after {
+    width: 985px;
+    left: calc(231px + 16px);
+  }
+}
+
 .delivery-list {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .delivery-list {
+    width: 288px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .delivery-list {
+    row-gap: 20px;
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-list {
+    row-gap: 32px;
+    width: 1088px;
+  }
 }
 
 .delivery-list-item {
@@ -44,13 +129,24 @@
   column-gap: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .delivery-list-item {
+    column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1280) {
+  .delivery-list-item {
+    column-gap: 56px;
+  }
+}
+
 .delivery-list-number {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
   border: 1px solid #000;
   border-radius: 50%;
   width: 40px;
@@ -58,10 +154,29 @@
   flex-shrink: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .delivery-list-number {
+    font-size: 26px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
 .delivery-list-description {
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .delivery-list-description {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .delivery-list-description {
+    font-size: 32px;
+  }
 }
 
 .delivery-flowers-picture {
@@ -73,98 +188,33 @@
   left: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .delivery-container {
-    width: 288px;
-  }
-
-  .delivery-title::after {
-    width: 148px;
-    left: calc(126px + 14px);
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .delivery-section {
-    padding-top: 100px;
-    padding-bottom: calc(40px + 264px + 100px);
-  }
-
-  .delivery-container {
-    width: 720px;
-  }
-
-  .delivery-title {
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 60px;
-  }
-
-  .delivery-title::after {
-    width: 473px;
-    left: calc(231px + 16px);
-  }
-
-  .delivery-list {
-    row-gap: 20px;
-  }
-
-  .delivery-list-item {
-    column-gap: 20px;
-  }
-
-  .delivery-list-number {
-    font-size: 26px;
-    line-height: 32px;
-    width: 64px;
-    height: 64px;
-  }
-
-  .delivery-list-description {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
   .delivery-flowers-picture {
     height: 264px;
     bottom: 100px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .delivery-section {
-    padding-top: 100px;
-    padding-bottom: calc(60px + 391px + 100px);
-  }
-
-  .delivery-container {
-    width: 1232px;
-  }
-
-  .delivery-title {
-    margin-bottom: 80px;
-  }
-
-  .delivery-title::after {
-    width: 985px;
-    left: calc(231px + 16px);
-  }
-
-  .delivery-list {
-    row-gap: 32px;
-  }
-
-  .delivery-list-item {
-    column-gap: 56px;
-  }
-
-  .delivery-list-description {
-    font-size: 32px;
-    line-height: 39px;
-  }
-
+@media screen and (min-width: 1280px) {
   .delivery-flowers-picture {
     height: 391px;
     bottom: 100px;
   }
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+  
+
+  
+}
+
+@media screen and (min-width: 1280px) {
+
+
+  
+
+  
 }

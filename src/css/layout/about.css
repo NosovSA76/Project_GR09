@@ -1,14 +1,21 @@
-.div{
-  width: 100%;
-}
+
 .about {
   max-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
   padding: 0 16px;
 }
-
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 768px;
+    padding: 0 24px;
+  }
+}
+ @media screen and (min-width: 1280px) {
+   .about {
+     max-width: 1280px;
+   }
+ }
 .near {
   display: flex;
   align-items: center;
@@ -24,55 +31,51 @@
    margin-left: 14px;
   background-color:  #000000;
 }
+ @media screen and (min-width: 768px) {
+   .near {
+     font-size: 44px;
+     margin-bottom: 56px;
+   }
+  }
 .flowers {
   font-weight: 400;
   font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .flowers {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .flowers {
+    font-size: 22px;
+  }
 }
 .flo{
   margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
-  .about{
-    min-width:768px;
-    padding: 0 24px;
-  }
-  .flo{
+  .flo {
     width: 322px;
     height: 168px;
+  }        
+}
+@media screen and (min-width: 1280px) {
+  .flo {
+    width: 510px;
+    height: 135px;
   }
+}
+ @media screen and (min-width: 768px) {
   .flow{
     display: flex;
     align-items: center;
     gap: 54px;
-  }
-    .near {
-      font-size: 44px;
-      line-height: 54px;
-      margin-bottom: 56px;
-    }
-    .flowers {
-      font-size: 20px;
-   
     }
   }
-        @media screen and (min-width: 1280px) {
-          .about {
-            max-width: 1280px;
-          }
-          .flo {
-            width: 510px;
-            height: 135px;
-          }
-         .near {
-          font-size: 44px;
-            line-height: 54px;
-           margin-bottom: 56px;
-         }
-         .flow{
-          gap: 90px;
-         }
-          .flowers {
-            font-size: 22px;
-                     }
+ @media screen and (min-width: 1280px) {
+  .flow{
+    gap: 90px;
+    }
         }
 

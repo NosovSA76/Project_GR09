@@ -1,0 +1,109 @@
+ .header {
+        position: fixed;
+        top: 16px;
+        z-index: 100;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 768px) {
+      .header{
+        top: 24px;
+        justify-content: space-between;} }
+
+      @media screen and (min-width: 1280px) {
+      .header{
+        top: 28px;
+        justify-content: space-between;} }
+
+      .header-container {
+        max-width: 432px;
+        justify-content: space-between;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+      }
+
+      @media screen and (min-width: 768px) {
+      .header-container{
+        max-width: 720px;
+        padding: 0 24px;
+        justify-content: space-between;} }
+
+         @media screen and (min-width: 1280px) {
+      .header-container{
+        max-width: 1232px;
+        justify-content: space-between;} }
+
+      .header-contact{
+        margin-left: auto;
+      }
+
+       @media screen and (min-width: 768px) {
+      .header-contact{
+        margin-left: 0} }
+
+      .mobil-meny{
+        margin-left: 15px;
+      }
+      @media screen and (min-width: 768px) {
+      .mobil-meny{
+        display: none;} }
+
+      .header-nav {
+        display: none;
+        align-items: center;
+        gap: 48px;
+      }
+
+      @media screen and (min-width: 768px) {
+      .header-nav{
+        display: flex;
+        width: 469px;
+        gap: 24px;}
+      }
+
+      @media screen and (min-width: 1280px) {
+      .header-nav{
+        width: 565px;
+        gap: 48px;}
+      }
+
+      .icon-logo{
+        width: 45px ;
+        height: 35px;
+      }
+
+      @media screen and (min-width: 768px) {
+      .icon-logo{
+        display: none;}
+      }
+
+      .icon-logo-big{
+        display: none;
+      }
+
+      @media screen and (min-width: 768px) {
+      .icon-logo-big{
+        display: block;
+        width: 72px ;
+        height: 57px;}
+       }
+
+      .icon-tel{
+        width: 22px;
+        height: 22px;
+      }
+      @media screen and (min-width: 768px) {
+      .icon-tel{
+        width: 24px;
+        height: 24px;} }
+        @media screen and (min-width: 1280px) {
+      .icon-tel{
+        width: 28px;
+        height: 28px;} }
+
+      .icon-mobil-menu{
+        width: 24px;
+        height: 24px;
+      }

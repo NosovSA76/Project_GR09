@@ -172,10 +172,13 @@
   color: #ffffff;
 
   border-radius: 38px;
+
+  animation: pulse;
+
+  transition: background-color 500ms linear;
 }
 
-.store-button:hover,
-.store-button:focus {
+.store-button:hover {
   background-color: #e25b41;
 }
 

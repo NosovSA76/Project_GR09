@@ -21,12 +21,12 @@
   content:'';
   height: 1px;
    width: 100%;
+   margin-left: 14px;
   background-color:  #000000;
 }
 .flowers {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
 }
 .flo{
   margin-bottom: 16px;
@@ -52,7 +52,6 @@
     }
     .flowers {
       font-size: 20px;
-      line-height: 24px;
    
     }
   }
@@ -74,8 +73,6 @@
          }
           .flowers {
             font-size: 22px;
-            line-height: 27px;
-          
                      }
         }
 

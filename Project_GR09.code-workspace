@@ -7,5 +7,7 @@
 			"path": "../Project_09_01"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project_GR09"
+	}
 }

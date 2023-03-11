@@ -153,35 +153,3 @@
     font-size: 28px;
   }
 }
-
-.store-button {
-  margin: 0 auto;
-  display: block;
-  width: 208px;
-  padding: 10px 35px;
-
-  font-size: 20px;
-
-  background-color: #e86f54;
-  color: #ffffff;
-
-  border-radius: 38px;
-}
-
-.store-button:hover {
-  background-color: #e25b41;
-
-  animation: pulse;
-  animation-duration: 1000ms;
-  animation-iteration-count: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .store-button {
-    width: 280px;
-    padding: 20px 43.5px;
-
-    font-size: 28px;
-    line-height: 0.85;
-  }
-}

@@ -5,10 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/Project_GR09/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Added 'Montserrat' font family -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@800&display=swap"
       rel="stylesheet"
     />
+    <!-- modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Added 'Inter' font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Added 'Slider' stylesheet -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -29,35 +44,38 @@
 
     
     <script type="module" crossorigin src="/Project_GR09/assets/index-bc22dd4f.js"></script>
-    <link rel="stylesheet" href="/Project_GR09/assets/index-df570198.css">
+    <link rel="stylesheet" href="/Project_GR09/assets/index-ae314503.css">
   </head>
 
   <body>
-    <!-- Loads the specified .html file -->
+    <main>
+      <!-- Loads the specified .html file -->
 
-    <header class="header">
+      <header class="header">
   <section class="header-container">
-    <a class="header-logo" href="#">
+    <a class="header-logo" href="#anemon">
       <svg class="icon-logo">
         <use href="/Project_GR09/assets/icons-170b2521.svg#Logo-mobil"></use>
       </svg>
-      
+
       <svg class="icon-logo-big">
         <use href="/Project_GR09/assets/icons-170b2521.svg#logo"></use>
       </svg>
     </a>
 
     <nav class="header-nav">
-      <a class="header-link" href="anemon">Anemone</a>
-      <a class="header-link" href="About">About us</a>
+      <a class="header-link" href="#anemon">Anemone</a>
+      <a class="header-link" href="#About">About us</a>
       <a class="header-link" href="#store">Store</a>
-      <a class="header-link" href="Delivery">Delivery</a>
-      <a class="header-link" href="Blog">Blog</a>
+      <a class="header-link" href="#Delivery">Delivery</a>
+      <a class="header-link" href="#Blog">Blog</a>
     </nav>
     <button class="header-contact" type="button">
-      <svg class="icon-tel">
-        <use href="/Project_GR09/assets/icons-170b2521.svg#tel"></use>
-      </svg>
+      <a href="tel:+380631234567">
+        <svg class="icon-tel">
+          <use href="/Project_GR09/assets/icons-170b2521.svg#tel"></use>
+        </svg>
+      </a>
     </button>
     <button class="mobil-meny js-open-menu" type="button">
       <svg class="icon-mobil-menu">
@@ -66,89 +84,85 @@
     </button>
   </section>
   <!-- modal phone -->
-  
 </header>
 <!-- mobile menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-toggle js-close-menu" type="button">
-      <svg class="menu-icon" width="12px" height="12px">
-          <use href="/Project_GR09/assets/icons-170b2521.svg#icon-close"></use>
-      </svg>
+    <svg class="menu-icon" width="12px" height="12px">
+      <use href="/Project_GR09/assets/icons-170b2521.svg#icon-close"></use>
+    </svg>
   </button>
   <nav class="mobile-menu-nav">
-      <ul class="mobile-menu-list">
-          <li class="mobile-menu-item">
-              <a href="" class="mobile-menu-link">Anemone</a>
-          </li>
-          <li class="mobile-menu-item">
-              <a href="" class="mobile-menu-link">About us</a>
-          </li>
-          <li class="mobile-menu-item">
-              <a href="" class="mobile-menu-link mob-link">Store</a>
-          </li>
-          <li class="mobile-menu-item">
-            <a href="" class="mobile-menu-link mob-link">Delivery</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="" class="mobile-menu-link mob-link">Blog</a>
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="" class="mobile-menu-link">Anemone</a>
       </li>
-      </ul>
+      <li class="mobile-menu-item">
+        <a href="" class="mobile-menu-link">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="" class="mobile-menu-link mob-link">Store</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="" class="mobile-menu-link mob-link">Delivery</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="" class="mobile-menu-link mob-link">Blog</a>
+      </li>
+    </ul>
   </nav>
-  
 </div>
 
-    <main>
-  <section class="hero">
-    <div id="anemon"></div>
-    <div class="hero-container">
-      <h1 class="hero-title">ANEMONE</h1>
-      <p class="hero-badge">flower studio</p>
-      <button class="hero-btn" type="button">
-        <div class="arrow-div">
-          <svg class="btn-arrow-mobil" width="28" height="28">
-            <use id="btn-arrow" href="/Project_GR09/assets/icons-170b2521.svg#btn-arrow-mobil"></use>
-          </svg>
-        </div>
-        <svg class="btn-text-mobil" width="76" height="76">
-          <use id="btn-txt" href="/Project_GR09/assets/icons-170b2521.svg#btn-text-mobil"></use>
+      <section class="hero">
+  <div id="anemon"></div>
+  <div class="hero-container">
+    <h1 class="hero-title">ANEMONE</h1>
+    <p class="hero-badge">flower studio</p>
+    <button class="hero-btn" type="button">
+      <div class="arrow-div">
+        <svg class="btn-arrow-mobil" width="28" height="28">
+          <use id="btn-arrow" href="/Project_GR09/assets/icons-170b2521.svg#btn-arrow-mobil"></use>
         </svg>
+      </div>
+      <svg class="btn-text-mobil" width="76" height="76">
+        <use id="btn-txt" href="/Project_GR09/assets/icons-170b2521.svg#btn-text-mobil"></use>
+      </svg>
 
-        <div class="arrow-div">
-          <svg class="btn-arrow-tabl" width="58" height="58">
-            <use href="/Project_GR09/assets/icons-170b2521.svg#btn-arrow-tabl"></use>
-          </svg>
-        </div>
-        <svg class="btn-text-tabl" width="145" height="150">
-          <use href="/Project_GR09/assets/icons-170b2521.svg#btn-text-tabl"></use>
+      <div class="arrow-div">
+        <svg class="btn-arrow-tabl" width="58" height="58">
+          <use href="/Project_GR09/assets/icons-170b2521.svg#btn-arrow-tabl"></use>
         </svg>
+      </div>
+      <svg class="btn-text-tabl" width="145" height="150">
+        <use href="/Project_GR09/assets/icons-170b2521.svg#btn-text-tabl"></use>
+      </svg>
 
-        <svg class="hero-btn-svg">
-          <use class="btn-text" href="/Project_GR09/assets/icons-170b2521.svg#btn-txt"></use>
-          <use class="btn-arrow" href="/Project_GR09/assets/icons-170b2521.svg#btn-arrow"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="hero-shape">
-      <img
-        class="hero-img"
-        src="/Project_GR09/assets/hero_image_mobil-3f59420a.jpg"
-        alt="Flower studio preview"
-      />
-      <img
-        class="hero-img-tabl"
-        src="/Project_GR09/assets/Hero-image-tablet-80550de3.jpg"
-        alt="Flower studio preview"
-      />
-      <img
-        class="hero-img-laptop"
-        src="/Project_GR09/assets/hero-bg-a31280f3.jpg"
-        alt="Flower studio preview"
-      />
-    </div>
-  </section>
-</main>
+      <svg class="hero-btn-svg">
+        <use class="btn-text" href="/Project_GR09/assets/icons-170b2521.svg#btn-txt"></use>
+        <use class="btn-arrow" href="/Project_GR09/assets/icons-170b2521.svg#btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-shape">
+    <img
+      class="hero-img"
+      src="/Project_GR09/assets/hero_image_mobil-3f59420a.jpg"
+      alt="Flower studio preview"
+    />
+    <img
+      class="hero-img-tabl"
+      src="/Project_GR09/assets/Hero-image-tablet-80550de3.jpg"
+      alt="Flower studio preview"
+    />
+    <img
+      class="hero-img-laptop"
+      src="/Project_GR09/assets/hero-bg-a31280f3.jpg"
+      alt="Flower studio preview"
+    />
+  </div>
+</section>
 
-    <section class="about">
+      <section class="about" id="About">
   <h2 class="near">About</h2>
   <ul class="flow">
     <li class="flo">
@@ -178,7 +192,7 @@
   </ul>
 </section>
 
-    <section class="store-section">
+      <section class="store-section">
   <div id="store"></div>
   <div class="store-container">
     <h2 class="store-title">Store</h2>
@@ -291,7 +305,7 @@
   </div>
 </section>
 
-    <section class="delivery-section" id="Delivery">
+      <section class="delivery-section" id="Delivery">
   <div class="delivery-container">
     <h2 class="delivery-title">Delivery</h2>
 
@@ -362,91 +376,10 @@
   </div>
 </section>
 
-    <footer class="footer">
-  <div class="container">
-    <a class="footer-logo" href="#">
-      <svg class="footer-icon-logo" width="73" Height="57">
-        <use href="/Project_GR09/assets/icons-170b2521.svg#Logo-mobil"></use>
-      </svg>
-      <svg class="icon-logo-big">
-        <use href="/Project_GR09/assets/icons-170b2521.svg#logo"></use>
-      </svg>
-    </a>
-    <nav class="footer-nav">
-      <h3 class="footer-title">Navigation</h3>
-      <ul class="footer-nav-list footer-list">
-        <li class="footer-nav-item footer-item">
-          <a href="" class="footer-nav-link">Anemone</a>
-        </li>
-        <li class="footer-nav-item footer-item">
-          <a href="" class="footer-nav-link">About us</a>
-        </li>
-        <li class="footer-nav-item footer-item">
-          <a href="" class="footer-nav-link">Store</a>
-        </li>
-        <li class="footer-nav-item footer-item">
-          <a href="" class="footer-nav-link">Delivery</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="footer-time">
-      <h3 class="footer-title">Opening times</h3>
-      <p class="footer-list">
-        Every day <br />
-        9:00 - 22:00
-      </p>
-    </div>
-    <address class="footer-contacts">
-      <h3 class="footer-title">Contacts</h3>
-      <ul class="footer-contacts-list footer-list">
-        <li class="footer-contacts-item footer-item">
-          <a href="tel:+380631234567" class="footer-contacts-link"
-            >+38 063 123 45 67</a
-          >
-        </li>
-        <li class="footer-contacts-item footer-item">
-          <a
-            href="mailto:anemonestudio@example.com"
-            class="footer-contacts-link"
-            >anemonestudio<br class="footer-br" />@example.com</a
-          >
-        </li>
-        <li class="footer-contacts-item footer-item">
-          <a
-            href="https://goo.gl/maps/7NcAQSkzZBaRQcvv9"
-            class="footer-contacts-link"
-            target="_blank"
-            >Reitarska Street, 11 <br />
-            Kyiv, Ukraine</a
-          >
-        </li>
-      </ul>
-    </address>
-    <div class="footer-icons">
-      <ul class="footer-icons-list">
-        <li class="footer-icons-item footer-item">
-          <a href="" class="footer icons-link">
-            <svg class="footer-icon" width="28" Height="28">
-              <use href="/Project_GR09/assets/icons-170b2521.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-icons-item footer-item">
-          <a href="" class="footer icons-link">
-            <svg class="footer-icon" width="28" Height="28">
-              <use href="/Project_GR09/assets/icons-170b2521.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-    <section class="section-blog">
+      <section class="section-blog">
   <div id="Blog"></div>
   <div class="conteiner-blog">
-    <h2 class="title-blog">BLOG</h2>
+    <h2 class="title-blog">Blog</h2>
 
     <div class="list-blog responsive">
       <div class="list-item-blog">
@@ -487,10 +420,7 @@
         <picture>
           <source
             media="(min-width:1280px)"
-            srcset="
-              ./img/blog/img3_desktop@1x.jpg  1x,
-              ../img/blog/img3_desktop@2x.jpg 2x
-            "
+            srcset="/Project_GR09/assets/img3_desktop@1x-36ee1853.jpg 1x, /Project_GR09/assets/img3_desktop@2x-19ac5297.jpg 2x"
           />
           <source
             media="(min-width:768px)"
@@ -569,9 +499,90 @@
   </div>
 </section>
 
+      <footer class="footer">
+  <div class="container">
+    <a class="footer-logo" href="#anemon">
+      <svg class="footer-icon-logo" width="73" Height="57">
+        <use href="/Project_GR09/assets/icons-170b2521.svg#Logo-mobil"></use>
+      </svg>
+      <svg class="icon-logo-big">
+        <use href="/Project_GR09/assets/icons-170b2521.svg#logo"></use>
+      </svg>
+    </a>
+    <nav class="footer-nav">
+      <h3 class="footer-title">Navigation</h3>
+      <ul class="footer-nav-list footer-list">
+        <li class="footer-nav-item footer-item">
+          <a href="#anemon" class="footer-nav-link">Anemone</a>
+        </li>
+        <li class="footer-nav-item footer-item">
+          <a href="#About" class="footer-nav-link">About us</a>
+        </li>
+        <li class="footer-nav-item footer-item">
+          <a href="#store" class="footer-nav-link">Store</a>
+        </li>
+        <li class="footer-nav-item footer-item">
+          <a href="#Delivery" class="footer-nav-link">Delivery</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-time">
+      <h3 class="footer-title">Opening times</h3>
+      <p class="footer-list">
+        Every day <br />
+        9:00 - 22:00
+      </p>
+    </div>
+    <address class="footer-contacts">
+      <h3 class="footer-title">Contacts</h3>
+      <ul class="footer-contacts-list footer-list">
+        <li class="footer-contacts-item footer-item">
+          <a href="tel:+380631234567" class="footer-contacts-link"
+            >+38 063 123 45 67</a
+          >
+        </li>
+        <li class="footer-contacts-item footer-item">
+          <a
+            href="mailto:anemonestudio@example.com"
+            class="footer-contacts-link"
+            >anemonestudio<br class="footer-br" />@example.com</a
+          >
+        </li>
+        <li class="footer-contacts-item footer-item">
+          <a
+            href="https://goo.gl/maps/7NcAQSkzZBaRQcvv9"
+            class="footer-contacts-link"
+            target="_blank"
+            >Reitarska Street, 11 <br />
+            Kyiv, Ukraine</a
+          >
+        </li>
+      </ul>
+    </address>
+    <div class="footer-icons">
+      <ul class="footer-icons-list">
+        <li class="footer-icons-item footer-item">
+          <a href="" class="footer icons-link">
+            <svg class="footer-icon" width="28" Height="28">
+              <use href="/Project_GR09/assets/icons-170b2521.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icons-item footer-item">
+          <a href="" class="footer icons-link">
+            <svg class="footer-icon" width="28" Height="28">
+              <use href="/Project_GR09/assets/icons-170b2521.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
+    </main>
     <!-- Base JS -->
-    <script src="./js/mobile-menu.js"></script>
+
     
     <script
       type="text/javascript"

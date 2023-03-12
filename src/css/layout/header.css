@@ -3,6 +3,7 @@
         top: 16px;
         z-index: 100;
         width: 100%;
+        
       }
 
       @media screen and (min-width: 768px) {
@@ -22,18 +23,27 @@
         display: flex;
         align-items: center;
         padding: 0 16px;
+        background-color: rgba(150, 150, 150, 0.7);
+        border-radius: 5px;
+        animation: changeColor 0.5s ease-in-out;
+        
       }
 
       @media screen and (min-width: 768px) {
       .header-container{
         max-width: 720px;
         padding: 0 24px;
-        justify-content: space-between;} }
+        justify-content: space-between;
+        animation: changeColor 1s ease-in-out;
+      } 
+      }
 
          @media screen and (min-width: 1280px) {
       .header-container{
         max-width: 1232px;
-        justify-content: space-between;} }
+        justify-content: space-between;
+        animation: changeColor 4s ease-in-out;
+      } }
 
       .header-contact{
         margin-left: auto;
@@ -55,6 +65,24 @@
         align-items: center;
         gap: 48px;
       }
+      /* .header-link{
+        color: black;
+      } */
+     @media screen and (min-width:1280px) {
+      .header-link{
+
+        animation: color-change 2000ms ease-out both;
+      }
+      
+     }
+     @media screen and (min-width:768px) {
+      .header-link{
+
+        animation: color-change 2000ms ease-out both;
+      }
+      
+     }
+     
 
       @media screen and (min-width: 768px) {
       .header-nav{
@@ -72,7 +100,9 @@
       .icon-logo{
         width: 45px ;
         height: 35px;
+        animation: color-change 500ms ease-out both;
       }
+      
 
       @media screen and (min-width: 768px) {
       .icon-logo{
@@ -85,26 +115,62 @@
 
       @media screen and (min-width: 768px) {
       .icon-logo-big{
+        animation: color-change 1000ms ease-out both;
         display: block;
         width: 72px ;
         height: 57px;}
+       }
+       @media screen and (min-width:1280px) {
+        .icon-logo-big{
+          animation: color-change 1000ms ease-out both;
+        }
+        
        }
 
       .icon-tel{
         width: 22px;
         height: 22px;
+        animation: color-change 1000ms ease-out both;
       }
       @media screen and (min-width: 768px) {
       .icon-tel{
+        animation: color-change 1000ms ease-out both;
         width: 24px;
-        height: 24px;} }
+        height: 24px;} 
+      }
         @media screen and (min-width: 1280px) {
       .icon-tel{
+        animation: color-change 1000ms ease-out both;
         width: 28px;
         height: 28px;} }
 
       .icon-mobil-menu{
         width: 24px;
         height: 24px;
+        animation: color-change 1000ms ease-out both;
       }
+    
+
+      @keyframes color-change {
+        from {
+            color: black;
+            fill: black;
+        }
+        to {
+          color: #fff;
+          fill: #fff;
+        }
+      }
+      @keyframes changeColor {
+        0% {
+         background-color: rgba(150, 150, 150, 0);
+       }
+       50% {
+         background-color: rgba(150, 150, 150, 0);
+       }
+       100% {
+         background-color: rgba(150, 150, 150, 0.7);
+       }
+     
+     }  
       

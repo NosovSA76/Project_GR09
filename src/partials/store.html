@@ -145,4 +145,60 @@
     </ul>
     <button class="button button-store" type="button">Order flowers</button>
   </div>
+  <div class=" backdrop-order-flowers is-hidden"><div class="modal-order-flowers">
+    <button class="button-modal-close">
+    <svg class="icon-close-store">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="title-modal-flowers">Contact us</h3>
+  <p class="title-item-flower">If you have any additional questions or you want to clarify something before 
+    you make an order please fill in your contact details. We will call you back. </p>
+    <form class="form-flower">
+      <div class="conteiner-form">
+        <input id="name" class="input-flower" placeholder="Your name" type="text"  minlength="3" required>
+        <label for="name" class="label-modal-flower" pattern="[A-Za-z]">Name</label>
+        <svg  class="icon-store-form">
+          <use href="../img/icons.svg#icon-okay"></use>
+        </svg>
+    </div>
+      <div class="conteiner-form"><input id="email" class="input-flower" type="email" title="Please enter your email"  placeholder="Your email" required>
+        <label for="email" class="label-modal-flower">
+        Email</label>
+        <svg  class="icon-store-form">
+          <use href="../img/icons.svg#icon-okay"></use>
+        </svg>
+    </div>  
+    <button type="submit" class="button-modal-send">Send</button>
+    </form>
+    
+</div></div>
+<div class="backdrop-thank is-hidden"><div class="modal-thank">
+  <button class="button-modal-close">
+    <svg class="icon-close-store">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <picture class="modal-photo-thank">
+    <source
+      media="(min-width:720px)"
+      srcset="../img/modal-1/img_desktop-tablet@1x.png 1x,
+      ../img/modal-1/img_desktop-tablet@1x.png 2x
+      "
+    />
+    <source
+      media="(min-width:320px)"
+      srcset="
+      ../img/modal-1/img_mob@1x.png 1x,
+      ../img/modal-1/img_mob@2x.png 2x
+      "
+    />
+    <img src="../img/modal-1/img_mob@1x.png" alt="Flower" />
+  </picture>
+  <h3 class="title-thank">Thank you!</h3>
+  <p class="title-item-thank">We have received your contact details and will reach you soon.</p>
+  <button type="button" class="button-continue">Continue</button>
+</div></div>
+
 </section>
+<label ></label>

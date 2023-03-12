@@ -1,3 +1,7 @@
-import'./js/slick-carousel'
+import './js/slick-carousel';
 
-import '/js/mobile-menu'
+import '/js/mobile-menu';
+
+import '/js/modal';
+
+import '/js/form-validation';

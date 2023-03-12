@@ -7,28 +7,21 @@
 
 /* Utils */
 
-
 @import url('./utils/variables.css');
 
-
 /* BASE */
-
 
 @import url('./base/common.css');
 
 @import url('./base/reset.css');
 
-
 /* Components */
-
 
 @import url('.//components/buttons.css');
 
 @import url('./components/h_section.css');
 
-
 /* Layout */
-
 
 @import url('./layout/header.css');
 
@@ -43,7 +36,7 @@
 @import url('./layout/blog.css');
 
 @import url('./layout/footer.css');
+
 @import url('./layout/mobile.css');
 
-
-
+@import url('./layout/modal.css');

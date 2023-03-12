@@ -29,60 +29,6 @@
   }
 }
 
-.delivery-title {
-  position: relative;
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .delivery-title {
-    font-size: 44px;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .delivery-title {
-    margin-bottom: 80px;
-  }
-}
-
-.delivery-title::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: calc(126px + 14px);
-  height: 1px;
-  width: calc(100% - (126px + 14px));
-  background-color: #000;
-}
-
-@media screen and (min-width: 320px) {
-  .delivery-title::after {
-    width: 148px;
-    left: calc(126px + 14px);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .delivery-title::after {
-    width: 473px;
-    left: calc(231px + 16px);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .delivery-title::after {
-    width: 985px;
-    left: calc(231px + 16px);
-  }
-}
-
 .delivery-list {
   display: flex;
   flex-direction: column;

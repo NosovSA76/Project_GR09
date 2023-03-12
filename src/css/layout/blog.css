@@ -1,6 +1,4 @@
-.div{
-  width: 100%;
-}
+
 .section-blog{
 
 }
@@ -21,7 +19,7 @@ max-width: 448px;
 .title-blog{
   display: flex;
   align-items: center;
- 
+
 }
 .title-blog::after{
   content: '';

@@ -1,3 +1,81 @@
-.div{
-  width: 100%;
+
+.about {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 16px;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 768px;
+    padding: 0 24px;
+  }
+}
+ @media screen and (min-width: 1280px) {
+   .about {
+     max-width: 1280px;
+   }
+ }
+.near {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.near::after {
+  content:'';
+  height: 1px;
+   width: 100%;
+   margin-left: 14px;
+  background-color:  #000000;
+}
+ @media screen and (min-width: 768px) {
+   .near {
+     font-size: 44px;
+     margin-bottom: 56px;
+   }
+  }
+.flowers {
+  font-weight: 400;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .flowers {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .flowers {
+    font-size: 22px;
+  }
+}
+.flo{
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .flo {
+    width: 322px;
+    height: 168px;
+  }        
+}
+@media screen and (min-width: 1280px) {
+  .flo {
+    width: 510px;
+    height: 135px;
+  }
+}
+ @media screen and (min-width: 768px) {
+  .flow{
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    }
+  }
+ @media screen and (min-width: 1280px) {
+  .flow{
+    gap: 90px;
+    }
+        }
+

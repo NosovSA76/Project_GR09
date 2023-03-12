@@ -44,7 +44,7 @@
 
     
     <script type="module" crossorigin src="/Project_GR09/assets/index-3a1d1cfb.js"></script>
-    <link rel="stylesheet" href="/Project_GR09/assets/index-dc45b0c3.css">
+    <link rel="stylesheet" href="/Project_GR09/assets/index-15f2b02b.css">
   </head>
 
   <body>
@@ -55,11 +55,11 @@
   <section class="header-container">
     <a class="header-logo" href="#anemon">
       <svg class="icon-logo">
-        <use href="/Project_GR09/assets/icons-82d74521.svg#Logo-mobil"></use>
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#Logo-mobil"></use>
       </svg>
 
       <svg class="icon-logo-big">
-        <use href="/Project_GR09/assets/icons-82d74521.svg#logo"></use>
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#logo"></use>
       </svg>
     </a>
 
@@ -73,13 +73,13 @@
     <button class="header-contact" type="button">
       <a href="tel:+380631234567">
         <svg class="icon-tel">
-          <use href="/Project_GR09/assets/icons-82d74521.svg#tel"></use>
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#tel"></use>
         </svg>
       </a>
     </button>
     <button class="mobil-meny js-open-menu" type="button">
       <svg class="icon-mobil-menu">
-        <use href="/Project_GR09/assets/icons-82d74521.svg#icon-Burger"></use>
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-Burger"></use>
       </svg>
     </button>
   </section>
@@ -89,7 +89,7 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-toggle js-close-menu" type="button">
     <svg class="menu-icon" width="12px" height="12px">
-      <use href="/Project_GR09/assets/icons-82d74521.svg#icon-close"></use>
+      <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
     </svg>
   </button>
   <nav class="mobile-menu-nav">
@@ -121,25 +121,25 @@
     <button class="hero-btn" type="button">
       <div class="arrow-div">
         <svg class="btn-arrow-mobil" width="28" height="28">
-          <use id="btn-arrow" href="/Project_GR09/assets/icons-82d74521.svg#btn-arrow-mobil"></use>
+          <use id="btn-arrow" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-arrow-mobil"></use>
         </svg>
       </div>
       <svg class="btn-text-mobil" width="76" height="76">
-        <use id="btn-txt" href="/Project_GR09/assets/icons-82d74521.svg#btn-text-mobil"></use>
+        <use id="btn-txt" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-text-mobil"></use>
       </svg>
 
       <div class="arrow-div">
         <svg class="btn-arrow-tabl" width="58" height="58">
-          <use href="/Project_GR09/assets/icons-82d74521.svg#btn-arrow-tabl"></use>
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-arrow-tabl"></use>
         </svg>
       </div>
       <svg class="btn-text-tabl" width="145" height="150">
-        <use href="/Project_GR09/assets/icons-82d74521.svg#btn-text-tabl"></use>
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-text-tabl"></use>
       </svg>
 
       <svg class="hero-btn-svg">
-        <use class="btn-text" href="/Project_GR09/assets/icons-82d74521.svg#btn-txt"></use>
-        <use class="btn-arrow" href="/Project_GR09/assets/icons-82d74521.svg#btn-arrow"></use>
+        <use class="btn-text" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-txt"></use>
+        <use class="btn-arrow" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-arrow"></use>
       </svg>
     </button>
   </div>
@@ -303,8 +303,63 @@
     </ul>
     <button class="button button-store" type="button">Order flowers</button>
   </div>
-</section>
+  <div class=" backdrop-order-flowers is-hidden"><div class="modal-order-flowers">
+    <button class="button-modal-close">
+    <svg class="icon-close-store">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="title-modal-flowers">Contact us</h3>
+  <p class="title-item-flower">If you have any additional questions or you want to clarify something before 
+    you make an order please fill in your contact details. We will call you back. </p>
+    <form class="form-flower">
+      <div class="conteiner-form">
+        <input id="name" class="input-flower" placeholder="Your name" type="text"  minlength="3" required>
+        <label for="name" class="label-modal-flower" pattern="[A-Za-z]">Name</label>
+        <svg  class="icon-store-form">
+          <use href="../img/icons.svg#icon-okay"></use>
+        </svg>
+    </div>
+      <div class="conteiner-form"><input id="email" class="input-flower" type="email" title="Please enter your email"  placeholder="Your email" required>
+        <label for="email" class="label-modal-flower">
+        Email</label>
+        <svg  class="icon-store-form">
+          <use href="../img/icons.svg#icon-okay"></use>
+        </svg>
+    </div>  
+    <button type="submit" class="button-modal-send">Send</button>
+    </form>
+    
+</div></div>
+<div class="backdrop-thank is-hidden"><div class="modal-thank">
+  <button class="button-modal-close">
+    <svg class="icon-close-store">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <picture class="modal-photo-thank">
+    <source
+      media="(min-width:720px)"
+      srcset="../img/modal-1/img_desktop-tablet@1x.png 1x,
+      ../img/modal-1/img_desktop-tablet@1x.png 2x
+      "
+    />
+    <source
+      media="(min-width:320px)"
+      srcset="
+      ../img/modal-1/img_mob@1x.png 1x,
+      ../img/modal-1/img_mob@2x.png 2x
+      "
+    />
+    <img src="../img/modal-1/img_mob@1x.png" alt="Flower" />
+  </picture>
+  <h3 class="title-thank">Thank you!</h3>
+  <p class="title-item-thank">We have received your contact details and will reach you soon.</p>
+  <button type="button" class="button-continue">Continue</button>
+</div></div>
 
+</section>
+<label ></label>
       <section class="delivery-section" id="Delivery">
   <div class="delivery-container">
     <h2 class="section-title">Delivery</h2>
@@ -391,7 +446,7 @@
             srcset="/Project_GR09/assets/img1_tab@1x-1dff5bdf.jpg 1x, /Project_GR09/assets/img1_tab@2x-16abd079.jpg 2x"
           />
           <source
-            media="(min-width:480px)"
+            media="(min-width:320px)"
             srcset="/Project_GR09/assets/img1_mob@1x-dbc44396.jpg 1x, /Project_GR09/assets/img1_mob@2x-6523f0c5.jpg 2x"
           />
           <img src="/Project_GR09/assets/img1_mob@1x-dbc44396.jpg" alt="Flower" />
@@ -408,7 +463,7 @@
             srcset="/Project_GR09/assets/img2_tab@1x-6361eb7f.jpg 1x, /Project_GR09/assets/img2_tab@2x-b342a785.jpg 2x"
           />
           <source
-            media="(min-width:480px)"
+            media="(min-width:320px)"
             srcset="/Project_GR09/assets/img2_mob@1x-0cb9dd10.jpg 1x, /Project_GR09/assets/img2_mob@2x-13e8c4da.jpg 2x"
           />
           <img src="./img/blog/img2_mob@1x.jpg " alt="Flower" />
@@ -425,7 +480,7 @@
             srcset="/Project_GR09/assets/img3_tab@1x-bcf78d3a.jpg 1x, /Project_GR09/assets/img3_tab@2x-107ed772.jpg 2x"
           />
           <source
-            media="(min-width:480px)"
+            media="(min-width:320px)"
             srcset="/Project_GR09/assets/img3_mob@1x-899fe230.jpg 1x, /Project_GR09/assets/img3_mob@2x-86d58a54.jpg 2x"
           />
           <img src="/Project_GR09/assets/img3_mob@1x-899fe230.jpg" alt="Flower" />
@@ -442,7 +497,7 @@
             srcset="/Project_GR09/assets/img4_tab@1x-c616763b.jpg 1x, /Project_GR09/assets/img4_tab@2x-a70e8200.jpg 2x"
           />
           <source
-            media="(min-width:480px)"
+            media="(min-width:320px)"
             srcset="/Project_GR09/assets/img4_mob@1x-0e4172dc.jpg 1x, /Project_GR09/assets/img4_mob@2x-182f3d73.jpg 2x"
           />
           <img src="/Project_GR09/assets/img4_mob@1x-0e4172dc.jpg" alt="Flower" />
@@ -459,7 +514,7 @@
             srcset="/Project_GR09/assets/img5_tab@1x-f6b1cc1b.jpg 1x, /Project_GR09/assets/img5_tab@2x-81198d60.jpg 2x"
           />
           <source
-            media="(min-width:480px)"
+            media="(min-width:320px)"
             srcset="/Project_GR09/assets/img5_mob@1x-c52346e3.jpg 1x, /Project_GR09/assets/img5_mob@2x-4e6c9c86.jpg 2x"
           />
           <img src="/Project_GR09/assets/img5_mob@1x-c52346e3.jpg" alt="Flower" />
@@ -476,7 +531,7 @@
             srcset="/Project_GR09/assets/img6_tab@1x-5097f6fc.jpg 1x, /Project_GR09/assets/img6_tab@2x-681e8ef0.jpg 2x"
           />
           <source
-            media="(min-width:480px)"
+            media="(min-width:320px)"
             srcset="/Project_GR09/assets/img6_mob@1x-13c22d13.jpg 1x, /Project_GR09/assets/img6_mob@2x-d8569f0e.jpg 2x"
           />
           <img src="/Project_GR09/assets/img6_mob@1x-13c22d13.jpg" alt="Flower" />
@@ -484,14 +539,7 @@
       </div>
     </div>
 
-    <div class="button-blog">
-      <button type="button" class="my-slick-prev button-slick">
-        &xlarr;&#8211;&#8211;
-      </button>
-      <button type="button" class="my-slick-next button-slick">
-        &#8211;&#8211;&xrarr;
-      </button>
-    </div>
+   
     <p class="title-item-blog">Follow to our newsletter</p>
     <button
       type="button"
@@ -507,10 +555,10 @@
   <div class="container">
     <a class="footer-logo" href="#anemon">
       <svg class="footer-icon-logo" width="73" Height="57">
-        <use href="/Project_GR09/assets/icons-82d74521.svg#Logo-mobil"></use>
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#Logo-mobil"></use>
       </svg>
       <svg class="icon-logo-big">
-        <use href="/Project_GR09/assets/icons-82d74521.svg#logo"></use>
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#logo"></use>
       </svg>
     </a>
     <nav class="footer-nav">
@@ -568,14 +616,14 @@
         <li class="footer-icons-item footer-item">
           <a href="" class="footer icons-link">
             <svg class="footer-icon" width="28" Height="28">
-              <use href="/Project_GR09/assets/icons-82d74521.svg#icon-facebook"></use>
+              <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer-icons-item footer-item">
           <a href="" class="footer icons-link">
             <svg class="footer-icon" width="28" Height="28">
-              <use href="/Project_GR09/assets/icons-82d74521.svg#icon-instagram"></use>
+              <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>

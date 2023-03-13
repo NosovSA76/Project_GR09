@@ -12,7 +12,7 @@
   font-size: 30px;
 }
 .conteiner-blog{
-max-width: 448px;
+max-width: 480px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -27,6 +27,7 @@ margin-top: 32px;
 }
 .list-item-blog{
   margin-left: 16px;
+  font-weight: 500;
 }
 
 .title-item-blog{
@@ -38,7 +39,7 @@ margin-top: 68px;
 
 @media  screen and (min-width:768px) {
   .conteiner-blog{
-    max-width: 720px;
+    max-width: 768px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -72,10 +73,10 @@ margin-top: 68px;
 }
 @media screen and (min-width:1280px) {
   .conteiner-blog{
-    max-width: 1232px;
+    max-width: 1280px;
   }
   .list-blog{
-  max-width: 1232px;
+  max-width: 1280px;
   }
 
   .title-item-blog{

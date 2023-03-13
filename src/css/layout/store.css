@@ -209,6 +209,10 @@ pointer-events: none;
   min-width: 320px;
   max-width: 480px;
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  justify-content: center;
 }
 
 
@@ -216,6 +220,7 @@ pointer-events: none;
   .store-container {
     padding: 0 24px;
     max-width: 768px;
+    gap:60px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -225,12 +230,12 @@ pointer-events: none;
 }
 
 .store-list {
-  max-width: calc(136px * 2 + 16px);
-  margin: 0 auto 32px auto;
-  display: flex;
+  max-width: 288px;
+    display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,13 +244,18 @@ pointer-events: none;
     column-gap: 32px;
     row-gap: 40px;
     justify-content: center;
-    margin: 0 0 60px 0;
-  }
+   }
 }
-
 @media screen and (min-width: 768px) {
   .store-list {
+    column-gap: 32px;
     row-gap: 64px;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+  .store-item {
+    width: 600px;
   }
 }
 
@@ -277,7 +287,6 @@ pointer-events: none;
 
 .store-subtitle {
   margin-bottom: 6px;
-
   font-weight: 500;
   font-size: 16px;
 }
@@ -287,9 +296,7 @@ pointer-events: none;
     display: flex;
     align-items: center;
     gap: 8px;
-
     margin-bottom: 8px;
-
     font-size: 32px;
   }
 
@@ -304,7 +311,6 @@ pointer-events: none;
 @media screen and (min-width: 1280px) {
   .store-subtitle {
     margin-bottom: 4px;
-
     font-size: 36px;
   }
 }

@@ -13,13 +13,12 @@ padding: 8px 39.5px;
     border-radius: 38px;
     display: block;
     margin: auto;
-    margin-top: 24px;
     line-height: 24px;
     font-weight: 500;
   }
 
   @media  screen and (min-width:768px){
-    .button{  
+    .button{
         font-size: 28px;
       }
       .button-blog{

@@ -1,7 +1,4 @@
 
-.section-blog{
-
-}
 .my-slick-prev{
   position: absolute;
   bottom: -61px;
@@ -37,12 +34,8 @@ text-align: center;
 margin-top: 68px;
 }
 
-.button-blog{
-  margin-top: 4px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+
+
 @media  screen and (min-width:768px) {
   .conteiner-blog{
     max-width: 720px;
@@ -87,5 +80,15 @@ margin-top: 68px;
 
   .title-item-blog{
     margin-top: 104px;
+  }
+}
+
+#Blog{
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width:1280px) {
+  #Blog{
+    padding-bottom: 100px;
   }
 }

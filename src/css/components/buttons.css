@@ -1,37 +1,41 @@
+  .button-blog{
+    width: 170px;
+    height: 40px;
+  }
+
+  .button-store{
+    width: 208px;
+    height: 44px;
+  }
+
+
 .button{
     font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 18px;
     background-color: #E86F54;
     border-radius: 38px;
-    margin-top: 28px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin: 0 auto;
+    line-height: 24px;
+    font-weight: 500;
   }
+
+   @media  screen and (min-width:768px){
+    .button{
+        width: 280px;
+        font-size: 28px;
+        height: 64px;
+             }
+  }
+
   .button:hover{
     background-color: #E25B41;
     animation: pulse;
     animation-duration: 1000ms;
     animation-iteration-count: 1;
   }
+
   .button:focus{
     background-color: #FA6F54;
-  }
-  .button-subscribe-blog{
-    width: 170px;
-    padding: 9px 28px;
-  }
-  .button-store{
-    width: 208px;
-    padding: 11px 28px;
-  }
- @media  screen and (min-width:768px){
-    .button{
-        width: 280px;
-        font-size: 28px;
-        padding: 15px 32px;
-        margin-top: 32px;
-      }
-     
   }

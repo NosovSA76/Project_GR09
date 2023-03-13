@@ -1,27 +1,25 @@
-
 @media screen and (min-width: 768px) {
-  .title-item-flower{
+  .title-item-flower {
     font-size: 16px;
   }
 }
 
-  .store-container {
+.store-container {
   margin: 0 auto;
   min-width: 320px;
   max-width: 480px;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
-  gap:32px;
+  gap: 32px;
   justify-content: center;
 }
-
 
 @media screen and (min-width: 768px) {
   .store-container {
     padding: 0 24px;
     max-width: 768px;
-    gap:60px;
+    gap: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -32,7 +30,7 @@
 
 .store-list {
   max-width: 288px;
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
@@ -41,22 +39,22 @@
 
 @media screen and (min-width: 768px) {
   .store-list {
-    max-width: 100%;
+    max-width: 768px;
     column-gap: 32px;
     row-gap: 40px;
     justify-content: center;
-   }
+  }
 }
 @media screen and (min-width: 768px) {
   .store-list {
+    max-width: 1280px;
     column-gap: 32px;
     row-gap: 64px;
-   }
+  }
 }
 
 .item-img {
   margin-bottom: 12px;
-
 }
 
 @media screen and (min-width: 768px) {

@@ -99,8 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // При відкритті модалки на неї і на бекдроп буде додаватися клас active, тому треба відповідні стилі додати на модалку і бекдроп. Є клас active, вони видимі, немає -- невидимі
 
-
-
 // Привязка однієї модалки до 2 кнопок
 const buttonToSimulateClick = document.querySelector('#imitation');
 const buttonToClick = document.querySelector('.hero-btn');
@@ -120,9 +118,7 @@ const linksToSimulateClick = document.querySelectorAll('.mobile-menu-link');
 const buttonCloseToClick = document.querySelector('#close');
 
 linksToSimulateClick.forEach(link => {
-  link.addEventListener('click', (event) => {
-
-
+  link.addEventListener('click', event => {
     buttonCloseToClick.click();
   });
 });

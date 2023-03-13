@@ -7,7 +7,7 @@
   <!-- Store MOodal -->
 
   <div class="modal-order-flowers modal" data-modal="1">
-    <button class="button-modal-close">
+    <button class="button-modal-close js-modal-close">
       <svg class="icon-close-store">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
@@ -31,9 +31,6 @@
         <label for="name" class="label-modal-flower" pattern="[A-Za-z]"
           >Name</label
         >
-        <svg class="icon-store-form">
-          <use href="./img/icons.svg#icon-okay"></use>
-        </svg>
       </div>
       <div class="conteiner-form">
         <input
@@ -44,14 +41,17 @@
           placeholder="Your email"
           required
         />
-        <label for="email" class="label-modal-flower"> Email</label>
-        <svg class="icon-store-form">
-          <use href="./img/icons.svg#icon-okay"></use>
+        <svg class="error-logo valid-logo" width="20" height="20">
+          <use href="./img/icons.svg#error-logo"></use>
         </svg>
+        <svg class="success-logo valid-logo" width="20" height="20">
+          <use href="./img/icons.svg#success-logo"></use>
+        </svg>
+        <label for="email" class="label-modal-flower"> Email</label>
       </div>
       <button
         type="submit"
-        class="button-modal-sendsubscribe-modal modal"
+        class="button-modal-send js-open-modal"
         data-modal="3"
       >
         Send
@@ -100,7 +100,7 @@
   </div>
 
   <div class="modal-thank modal" data-modal="3">
-    <button class="button-modal-close">
+    <button class="button-modal-close js-modal-close">
       <svg class="icon-close-store">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
@@ -126,6 +126,11 @@
     <p class="title-item-thank">
       We have received your contact details and will reach you soon.
     </p>
-    <button type="button button-store" class="button-continue">Continue</button>
+    <button
+      type="button button-store"
+      class="button-continue button-modal-close js-modal-close"
+    >
+      Continue
+    </button>
   </div>
 </div>

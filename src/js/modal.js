@@ -98,3 +98,27 @@ document.addEventListener('DOMContentLoaded', function () {
 // 	атрибут data-modal="1" (де 1 це довільне значення, але має співпадати з таким самим атрибутом на кнопці, яка відкривала цю модалку)
 
 // При відкритті модалки на неї і на бекдроп буде додаватися клас active, тому треба відповідні стилі додати на модалку і бекдроп. Є клас active, вони видимі, немає -- невидимі
+
+
+
+// Привязка однієї модалки до 2 кнопок
+const buttonToSimulateClick = document.querySelector('#imitation');
+const buttonToClick = document.querySelector('.hero-btn');
+
+buttonToSimulateClick.addEventListener('click', () => {
+  buttonToClick.click();
+});
+
+
+
+
+const linksToSimulateClick = document.querySelectorAll('.mobile-menu-link');
+const buttonCloseToClick = document.querySelector('#close');
+
+linksToSimulateClick.forEach(link => {
+  link.addEventListener('click', (event) => {
+
+
+    buttonCloseToClick.click();
+  });
+});

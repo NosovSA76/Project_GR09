@@ -107,8 +107,16 @@ height: 12px;
 }
 
 .modal-thank{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+transform: translate(-50%, -50%) scale(0.7);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    transform 300ms linear;
   background-color: #fff;
-  width: 240px;
+  width: 480px;
+  height: 511px;
   padding: 16px;
   text-align: center;
   margin: auto;
@@ -117,9 +125,11 @@ height: 12px;
 
 }
 .modal-photo-thank{
+
   display: inline-block;
  margin-top: 10px;
 }
+
 .title-thank{
   margin-top: 16px;
   font-size: 20px;

@@ -44,7 +44,7 @@
 
     
     <script type="module" crossorigin src="/Project_GR09/assets/index-3a1d1cfb.js"></script>
-    <link rel="stylesheet" href="/Project_GR09/assets/index-45c823e8.css">
+    <link rel="stylesheet" href="/Project_GR09/assets/index-16b7c4fb.css">
   </head>
 
   <body>
@@ -306,88 +306,15 @@
         <p class="store-text">from &dollar;60</p>
       </li>
     </ul>
-    <button class="button button-store js-open-modal" type="button">
+    <button
+      class="button button-store js-open-modal"
+      type="button"
+      data-modal="1"
+    >
       Order flowers
     </button>
   </div>
-
-  <div class="backdrop-order-flowers is-hidden">
-    <div class="modal-order-flowers">
-      <button class="button-modal-close">
-        <svg class="icon-close-store">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h3 class="title-modal-flowers">Contact us</h3>
-      <p class="title-item-flower">
-        If you have any additional questions or you want to clarify something
-        before you make an order please fill in your contact details. We will
-        call you back.
-      </p>
-      <form class="form-flower">
-        <div class="conteiner-form">
-          <input
-            id="name"
-            class="input-flower"
-            placeholder="Your name"
-            type="text"
-            minlength="3"
-            required
-          />
-          <label for="name" class="label-modal-flower" pattern="[A-Za-z]"
-            >Name</label
-          >
-          <svg class="icon-store-form">
-            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
-          </svg>
-        </div>
-        <div class="conteiner-form">
-          <input
-            id="email"
-            class="input-flower"
-            type="email"
-            title="Please enter your email"
-            placeholder="Your email"
-            required
-          />
-          <label for="email" class="label-modal-flower"> Email</label>
-          <svg class="icon-store-form">
-            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
-          </svg>
-        </div>
-        <button type="submit" class="button-modal-send">Send</button>
-      </form>
-    </div>
-  </div>
-  <div class="backdrop-thank is-hidden">
-    <div class="modal-thank">
-      <button class="button-modal-close">
-        <svg class="icon-close-store">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
-        </svg>
-      </button>
-      <picture class="modal-photo-thank">
-        <source
-          media="(min-width:720px)"
-          srcset="/Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 1x, /Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 2x"
-        />
-        <source
-          media="(min-width:320px)"
-          srcset="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png 1x, /Project_GR09/assets/img_mob@2x-d9af1d23.png 2x"
-        />
-        <img src="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png" alt="Flower" />
-      </picture>
-      <h3 class="title-thank">Thank you!</h3>
-      <p class="title-item-thank">
-        We have received your contact details and will reach you soon.
-      </p>
-      <button type="button button-store" class="button-continue">
-        Continue
-      </button>
-    </div>
-  </div>
 </section>
-<label></label>
 
       <section class="section" id="Delivery">
   <div class="delivery-container">
@@ -665,6 +592,61 @@
   |============================
 */ -->
 <div class="js-backdrop-modal">
+  <!-- Store MOodal -->
+
+  <div class="modal-order-flowers modal" data-modal="1">
+    <button class="button-modal-close">
+      <svg class="icon-close-store">
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="title-modal-flowers">Contact us</h3>
+    <p class="title-item-flower">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="form-flower">
+      <div class="conteiner-form">
+        <input
+          id="name"
+          class="input-flower"
+          placeholder="Your name"
+          type="text"
+          minlength="3"
+          required
+        />
+        <label for="name" class="label-modal-flower" pattern="[A-Za-z]"
+          >Name</label
+        >
+        <svg class="icon-store-form">
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
+        </svg>
+      </div>
+      <div class="conteiner-form">
+        <input
+          id="email"
+          class="input-flower"
+          type="email"
+          title="Please enter your email"
+          placeholder="Your email"
+          required
+        />
+        <label for="email" class="label-modal-flower"> Email</label>
+        <svg class="icon-store-form">
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
+        </svg>
+      </div>
+      <button
+        type="submit"
+        class="button-modal-sendsubscribe-modal modal"
+        data-modal="3"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
   <!-- Subscribe MOodal -->
   <div class="subscribe-modal modal" data-modal="2">
     <button class="close-button js-modal-close" type="button">
@@ -703,6 +685,30 @@
         Subscribe
       </button>
     </form>
+  </div>
+
+  <div class="modal-thank modal" data-modal="3">
+    <button class="button-modal-close">
+      <svg class="icon-close-store">
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
+      </svg>
+    </button>
+    <picture class="modal-photo-thank">
+      <source
+        media="(min-width:720px)"
+        srcset="/Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 1x, /Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 2x"
+      />
+      <source
+        media="(min-width:320px)"
+        srcset="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png 1x, /Project_GR09/assets/img_mob@2x-d9af1d23.png 2x"
+      />
+      <img src="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png" alt="Flower" />
+    </picture>
+    <h3 class="title-thank">Thank you!</h3>
+    <p class="title-item-thank">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button type="button button-store" class="button-continue">Continue</button>
   </div>
 </div>
 

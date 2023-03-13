@@ -43,8 +43,8 @@
     <!-- Base Styles -->
 
     
-    <script type="module" crossorigin src="/Project_GR09/assets/index-3a1d1cfb.js"></script>
-    <link rel="stylesheet" href="/Project_GR09/assets/index-16b7c4fb.css">
+    <script type="module" crossorigin src="/Project_GR09/assets/index-863e39e2.js"></script>
+    <link rel="stylesheet" href="/Project_GR09/assets/index-8f8e8e94.css">
   </head>
 
   <body>
@@ -87,7 +87,7 @@
 </header>
 <!-- mobile menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu" type="button">
+  <button class="menu-toggle js-close-menu" type="button" id="close">
     <svg class="menu-icon" width="12px" height="12px">
       <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
     </svg>
@@ -117,7 +117,7 @@
   <div class="hero-container">
     <h1 class="hero-title">ANEMONE</h1>
     <p class="hero-badge">flower studio</p>
-    <button class="hero-btn" type="button">
+    <button class="hero-btn js-open-modal" type="button" data-modal="1">
       <div class="arrow-div">
         <svg class="btn-arrow-mobil" width="28" height="28">
           <use id="btn-arrow" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-arrow-mobil"></use>
@@ -145,17 +145,20 @@
   <div class="hero-shape">
     <img
       class="hero-img"
-      src="/Project_GR09/assets/hero_image_mobil-3f59420a.jpg"
+      srcset="/Project_GR09/assets/img_mob@1x-0f21044a.jpg 1x, /Project_GR09/assets/img_mob@2x-db47dd6e.jpg 2x"
+      src="/Project_GR09/assets/img_mob@1x-0f21044a.jpg"
       alt="Flower studio preview"
     />
     <img
+      srcset="/Project_GR09/assets/img_tab@1x-5f2d90d7.jpg 1x, /Project_GR09/assets/img_tab@2x-5baf40a9.jpg 2x"
       class="hero-img-tabl"
-      src="/Project_GR09/assets/Hero-image-tablet-80550de3.jpg"
+      src="/Project_GR09/assets/img_tab@1x-5f2d90d7.jpg"
       alt="Flower studio preview"
     />
     <img
       class="hero-img-laptop"
-      src="/Project_GR09/assets/hero-bg-a31280f3.jpg"
+      srcset="/Project_GR09/assets/img_desktop@1x-2d3a4b90.jpg 1x, /Project_GR09/assets/img_desktop@2x-b8f77649.jpg 2x"
+      src="/Project_GR09/assets/img_desktop@1x-2d3a4b90.jpg"
       alt="Flower studio preview"
     />
   </div>
@@ -306,11 +309,7 @@
         <p class="store-text">from &dollar;60</p>
       </li>
     </ul>
-    <button
-      class="button button-store js-open-modal"
-      type="button"
-      data-modal="1"
-    >
+    <button class="button button-store" type="button" id="imitation">
       Order flowers
     </button>
   </div>
@@ -595,7 +594,7 @@
   <!-- Store MOodal -->
 
   <div class="modal-order-flowers modal" data-modal="1">
-    <button class="button-modal-close">
+    <button class="button-modal-close js-modal-close">
       <svg class="icon-close-store">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
       </svg>
@@ -619,9 +618,6 @@
         <label for="name" class="label-modal-flower" pattern="[A-Za-z]"
           >Name</label
         >
-        <svg class="icon-store-form">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
-        </svg>
       </div>
       <div class="conteiner-form">
         <input
@@ -632,14 +628,17 @@
           placeholder="Your email"
           required
         />
-        <label for="email" class="label-modal-flower"> Email</label>
-        <svg class="icon-store-form">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
+        <svg class="error-logo valid-logo" width="20" height="20">
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#error-logo"></use>
         </svg>
+        <svg class="success-logo valid-logo" width="20" height="20">
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#success-logo"></use>
+        </svg>
+        <label for="email" class="label-modal-flower"> Email</label>
       </div>
       <button
         type="submit"
-        class="button-modal-sendsubscribe-modal modal"
+        class="button-modal-send js-open-modal"
         data-modal="3"
       >
         Send
@@ -688,7 +687,7 @@
   </div>
 
   <div class="modal-thank modal" data-modal="3">
-    <button class="button-modal-close">
+    <button class="button-modal-close js-modal-close">
       <svg class="icon-close-store">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
       </svg>
@@ -708,7 +707,12 @@
     <p class="title-item-thank">
       We have received your contact details and will reach you soon.
     </p>
-    <button type="button button-store" class="button-continue">Continue</button>
+    <button
+      type="button button-store"
+      class="button-continue button-modal-close js-modal-close"
+    >
+      Continue
+    </button>
   </div>
 </div>
 

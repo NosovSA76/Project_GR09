@@ -44,7 +44,7 @@
 
     
     <script type="module" crossorigin src="/Project_GR09/assets/index-3a1d1cfb.js"></script>
-    <link rel="stylesheet" href="/Project_GR09/assets/index-15f2b02b.css">
+    <link rel="stylesheet" href="/Project_GR09/assets/index-7540083d.css">
   </head>
 
   <body>
@@ -95,26 +95,25 @@
   <nav class="mobile-menu-nav">
     <ul class="mobile-menu-list">
       <li class="mobile-menu-item">
-        <a href="" class="mobile-menu-link">Anemone</a>
+        <a href="#anemon" class="mobile-menu-link">Anemone</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="" class="mobile-menu-link">About us</a>
+        <a href="#About" class="mobile-menu-link">About us</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="" class="mobile-menu-link mob-link">Store</a>
+        <a href="#store" class="mobile-menu-link mob-link">Store</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="" class="mobile-menu-link mob-link">Delivery</a>
+        <a href="#Delivery" class="mobile-menu-link mob-link">Delivery</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="" class="mobile-menu-link mob-link">Blog</a>
+        <a href="#Blog" class="mobile-menu-link mob-link">Blog</a>
       </li>
     </ul>
   </nav>
 </div>
 
-      <section class="hero">
-  <div id="anemon"></div>
+      <section class="hero" id="anemon">
   <div class="hero-container">
     <h1 class="hero-title">ANEMONE</h1>
     <p class="hero-badge">flower studio</p>
@@ -162,38 +161,40 @@
   </div>
 </section>
 
-      <section class="about" id="About">
-  <h2 class="section-title">About</h2>
-  <ul class="flow">
-    <li class="flo">
-      <p class="flowers">
-        We are a minimalistic flower studio. We love people and flowers.
-        Therefore, every day we give people the beauty and joy creating stylish
-        and modern masterpieces. Every bouquet we create is unique as you are.
-      </p>
-    </li>
-    <li>
-      <picture>
-        <source
-          srcset="/Project_GR09/assets/img_desktop@1x-3beb3ec6.jpg 1x, /Project_GR09/assets/img_desktop@2x-d4ddfe05.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="/Project_GR09/assets/img_tab@1x-71787a6a.jpg 1x, /Project_GR09/assets/img_tab@2x-f336163b.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Project_GR09/assets/img_mob@1x-d3632135.jpg 1x, /Project_GR09/assets/img_mob@2x-a8882d73.jpg 2x"
-          media="(min-width: 280px)"
-        />
-        <img srcset="/Project_GR09/assets/img_mob@2x-a8882d73.jpg " src="/Project_GR09/assets/img_mob@1x-d3632135.jpg" />
-      </picture>
-    </li>
-  </ul>
+      <section class="section" id="About">
+  <div class="conteiner-about">
+    <h2 class="section-title">About</h2>
+    <ul class="flow">
+      <li class="flo">
+        <p class="flowers">
+          We are a minimalistic flower studio. We love people and flowers.
+          Therefore, every day we give people the beauty and joy creating
+          stylish and modern masterpieces. Every bouquet we create is unique as
+          you are.
+        </p>
+      </li>
+      <li>
+        <picture>
+          <source
+            srcset="/Project_GR09/assets/img_desktop@1x-3beb3ec6.jpg 1x, /Project_GR09/assets/img_desktop@2x-d4ddfe05.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/Project_GR09/assets/img_tab@1x-71787a6a.jpg 1x, /Project_GR09/assets/img_tab@2x-f336163b.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/Project_GR09/assets/img_mob@1x-d3632135.jpg 1x, /Project_GR09/assets/img_mob@2x-a8882d73.jpg 2x"
+            media="(min-width: 280px)"
+          />
+          <img srcset="/Project_GR09/assets/img_mob@2x-a8882d73.jpg " src="/Project_GR09/assets/img_mob@1x-d3632135.jpg" />
+        </picture>
+      </li>
+    </ul>
+  </div>
 </section>
 
-      <section class="store-section">
-  <div id="store"></div>
+      <section class="section" id="store">
   <div class="store-container">
     <h2 class="section-title">Store</h2>
     <ul class="store-list">
@@ -301,66 +302,90 @@
         <p class="store-text">from &dollar;60</p>
       </li>
     </ul>
-    <button class="button button-store" type="button">Order flowers</button>
+    <button class="button button-store js-open-modal" type="button">
+      Order flowers
+    </button>
   </div>
-  <div class=" backdrop-order-flowers is-hidden"><div class="modal-order-flowers">
-    <button class="button-modal-close">
-    <svg class="icon-close-store">
-      <use href="../img/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h3 class="title-modal-flowers">Contact us</h3>
-  <p class="title-item-flower">If you have any additional questions or you want to clarify something before 
-    you make an order please fill in your contact details. We will call you back. </p>
-    <form class="form-flower">
-      <div class="conteiner-form">
-        <input id="name" class="input-flower" placeholder="Your name" type="text"  minlength="3" required>
-        <label for="name" class="label-modal-flower" pattern="[A-Za-z]">Name</label>
-        <svg  class="icon-store-form">
-          <use href="../img/icons.svg#icon-okay"></use>
-        </svg>
-    </div>
-      <div class="conteiner-form"><input id="email" class="input-flower" type="email" title="Please enter your email"  placeholder="Your email" required>
-        <label for="email" class="label-modal-flower">
-        Email</label>
-        <svg  class="icon-store-form">
-          <use href="../img/icons.svg#icon-okay"></use>
-        </svg>
-    </div>  
-    <button type="submit" class="button-modal-send">Send</button>
-    </form>
-    
-</div></div>
-<div class="backdrop-thank is-hidden"><div class="modal-thank">
-  <button class="button-modal-close">
-    <svg class="icon-close-store">
-      <use href="../img/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-  <picture class="modal-photo-thank">
-    <source
-      media="(min-width:720px)"
-      srcset="../img/modal-1/img_desktop-tablet@1x.png 1x,
-      ../img/modal-1/img_desktop-tablet@1x.png 2x
-      "
-    />
-    <source
-      media="(min-width:320px)"
-      srcset="
-      ../img/modal-1/img_mob@1x.png 1x,
-      ../img/modal-1/img_mob@2x.png 2x
-      "
-    />
-    <img src="../img/modal-1/img_mob@1x.png" alt="Flower" />
-  </picture>
-  <h3 class="title-thank">Thank you!</h3>
-  <p class="title-item-thank">We have received your contact details and will reach you soon.</p>
-  <button type="button" class="button-continue">Continue</button>
-</div></div>
 
+  <div class="backdrop-order-flowers is-hidden">
+    <div class="modal-order-flowers">
+      <button class="button-modal-close">
+        <svg class="icon-close-store">
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h3 class="title-modal-flowers">Contact us</h3>
+      <p class="title-item-flower">
+        If you have any additional questions or you want to clarify something
+        before you make an order please fill in your contact details. We will
+        call you back.
+      </p>
+      <form class="form-flower">
+        <div class="conteiner-form">
+          <input
+            id="name"
+            class="input-flower"
+            placeholder="Your name"
+            type="text"
+            minlength="3"
+            required
+          />
+          <label for="name" class="label-modal-flower" pattern="[A-Za-z]"
+            >Name</label
+          >
+          <svg class="icon-store-form">
+            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
+          </svg>
+        </div>
+        <div class="conteiner-form">
+          <input
+            id="email"
+            class="input-flower"
+            type="email"
+            title="Please enter your email"
+            placeholder="Your email"
+            required
+          />
+          <label for="email" class="label-modal-flower"> Email</label>
+          <svg class="icon-store-form">
+            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-okay"></use>
+          </svg>
+        </div>
+        <button type="submit" class="button-modal-send">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="backdrop-thank is-hidden">
+    <div class="modal-thank">
+      <button class="button-modal-close">
+        <svg class="icon-close-store">
+          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
+        </svg>
+      </button>
+      <picture class="modal-photo-thank">
+        <source
+          media="(min-width:720px)"
+          srcset="/Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 1x, /Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 2x"
+        />
+        <source
+          media="(min-width:320px)"
+          srcset="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png 1x, /Project_GR09/assets/img_mob@2x-d9af1d23.png 2x"
+        />
+        <img src="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png" alt="Flower" />
+      </picture>
+      <h3 class="title-thank">Thank you!</h3>
+      <p class="title-item-thank">
+        We have received your contact details and will reach you soon.
+      </p>
+      <button type="button button-store" class="button-continue">
+        Continue
+      </button>
+    </div>
+  </div>
 </section>
-<label ></label>
-      <section class="delivery-section" id="Delivery">
+<label></label>
+
+      <section class="section" id="Delivery">
   <div class="delivery-container">
     <h2 class="section-title">Delivery</h2>
     <ul class="delivery-list">
@@ -430,8 +455,7 @@
   </div>
 </section>
 
-      <section class="section-blog">
-  <div id="Blog"></div>
+      <section class="section" id="Blog">
   <div class="conteiner-blog">
     <h2 class="section-title">Blog</h2>
     <div class="list-blog responsive">
@@ -539,11 +563,10 @@
       </div>
     </div>
 
-   
     <p class="title-item-blog">Follow to our newsletter</p>
     <button
       type="button"
-      class="subscribe-button-blog js-open-modal"
+      class="button button-blog js-open-modal"
       data-modal="2"
     >
       Subscribe

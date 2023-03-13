@@ -2,7 +2,7 @@
   <div class="hero-container">
     <h1 class="hero-title">ANEMONE</h1>
     <p class="hero-badge">flower studio</p>
-    <button class="hero-btn" type="button">
+    <button class="hero-btn js-open-modal" type="button" data-modal="1">
       <div class="arrow-div">
         <svg class="btn-arrow-mobil" width="28" height="28">
           <use id="btn-arrow" href="./img/icons.svg#btn-arrow-mobil"></use>
@@ -30,17 +30,23 @@
   <div class="hero-shape">
     <img
       class="hero-img"
-      src="./img/hero_image_mobil.jpg"
+      srcset="./img/hero/img_mob@1x.jpg 1x, ./img/hero/img_mob@2x.jpg 2x"
+      src="./img/hero/img_mob@1x.jpg"
       alt="Flower studio preview"
     />
     <img
+      srcset="./img/hero/img_tab@1x.jpg 1x, ./img/hero/img_tab@2x.jpg 2x"
       class="hero-img-tabl"
-      src="./img/Hero-image-tablet.jpg"
+      src="./img/hero/img_tab@1x.jpg"
       alt="Flower studio preview"
     />
     <img
       class="hero-img-laptop"
-      src="./img/hero-bg.jpg"
+      srcset="
+        ./img/hero/img_desktop@1x.jpg 1x,
+        ./img/hero/img_desktop@2x.jpg 2x
+      "
+      src="./img/hero/img_desktop@1x.jpg"
       alt="Flower studio preview"
     />
   </div>

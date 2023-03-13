@@ -1,8 +1,5 @@
-.store-section {
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 480px;
-}
+
+
 .modal-order-flowers{
   max-width: 240px;
   padding: 16px 16px;
@@ -107,7 +104,7 @@ height: 12px;
   padding: 16px;
   text-align: center;
   margin: auto;
-  
+
 }
 .modal-photo-thank{
   display: inline-block;
@@ -142,7 +139,7 @@ left: 0;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transition: opacity 250ms;
-  
+
 }
 .backdrop-thank.is-hidden{
 opacity: 0;
@@ -207,19 +204,23 @@ pointer-events: none;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .store-section {
-    max-width: 1280px;
-  }
-}
-
-.store-container {
+  .store-container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
   padding: 0 16px;
 }
+
 
 @media screen and (min-width: 768px) {
   .store-container {
     padding: 0 24px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .store-container {
+    max-width: 1280px;
   }
 }
 

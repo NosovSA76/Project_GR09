@@ -109,8 +109,12 @@ buttonToSimulateClick.addEventListener('click', () => {
   buttonToClick.click();
 });
 
+const buttonToSimulateClose = document.querySelector('.button-modal-send');
+const buttonToClose = document.querySelector('#simulate');
 
-
+buttonToSimulateClose.addEventListener('click', () => {
+  buttonToClose.click();
+});
 
 const linksToSimulateClick = document.querySelectorAll('.mobile-menu-link');
 const buttonCloseToClick = document.querySelector('#close');

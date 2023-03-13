@@ -3,7 +3,7 @@
         top: 16px;
         z-index: 100;
         width: 100%;
-        
+
       }
 
       @media screen and (min-width: 768px) {
@@ -23,10 +23,10 @@
         display: flex;
         align-items: center;
         padding: 0 16px;
-        background-color: rgba(150, 150, 150, 0.7);
+        background-color: rgba(153, 149, 146, 0.7);
         border-radius: 5px;
         animation: changeColor 0.5s ease-in-out;
-        
+
       }
 
       @media screen and (min-width: 768px) {
@@ -35,7 +35,7 @@
         padding: 0 24px;
         justify-content: space-between;
         animation: changeColor 1s ease-in-out;
-      } 
+      }
       }
 
          @media screen and (min-width: 1280px) {
@@ -73,16 +73,16 @@
 
         animation: color-change 2000ms ease-out both;
       }
-      
+
      }
      @media screen and (min-width:768px) {
       .header-link{
 
         animation: color-change 2000ms ease-out both;
       }
-      
+
      }
-     
+
 
       @media screen and (min-width: 768px) {
       .header-nav{
@@ -102,7 +102,7 @@
         height: 35px;
         animation: color-change 500ms ease-out both;
       }
-      
+
 
       @media screen and (min-width: 768px) {
       .icon-logo{
@@ -124,7 +124,7 @@
         .icon-logo-big{
           animation: color-change 1000ms ease-out both;
         }
-        
+
        }
 
       .icon-tel{
@@ -136,7 +136,7 @@
       .icon-tel{
         animation: color-change 1000ms ease-out both;
         width: 24px;
-        height: 24px;} 
+        height: 24px;}
       }
         @media screen and (min-width: 1280px) {
       .icon-tel{
@@ -149,7 +149,7 @@
         height: 24px;
         animation: color-change 1000ms ease-out both;
       }
-    
+
 
       @keyframes color-change {
         from {
@@ -163,14 +163,14 @@
       }
       @keyframes changeColor {
         0% {
-         background-color: rgba(150, 150, 150, 0);
+         background-color: rgba(153, 149, 146, 0);
        }
        50% {
-         background-color: rgba(150, 150, 150, 0);
+         background-color: rgba(153, 149, 146, 0);
        }
        100% {
-         background-color: rgba(150, 150, 150, 0.7);
+         background-color: rgba(153, 149, 146, 0.7);
        }
-     
-     }  
-      
+
+     }
+

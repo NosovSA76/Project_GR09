@@ -43,8 +43,8 @@
     <!-- Base Styles -->
 
     
-    <script type="module" crossorigin src="/Project_GR09/assets/index-7b54b3b3.js"></script>
-    <link rel="stylesheet" href="/Project_GR09/assets/index-e9f3efe2.css">
+    <script type="module" crossorigin src="/Project_GR09/assets/index-9803af74.js"></script>
+    <link rel="stylesheet" href="/Project_GR09/assets/index-8e5ffd69.css">
   </head>
 
   <body>
@@ -591,10 +591,10 @@
   |============================
 */ -->
 <div class="js-backdrop-modal">
-  <!-- Store MOodal -->
+  <!-- Store Modal -->
 
   <div class="modal-order-flowers modal" data-modal="1">
-    <button class="button-modal-close js-modal-close" id="simulate">
+    <button type="button" class="button-modal-close js-modal-close">
       <svg class="icon-close-store">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
       </svg>
@@ -606,39 +606,50 @@
       you back.
     </p>
     <form class="form-flower">
-      <div class="conteiner-form">
-        <input
-          id="name"
-          class="input-flower"
-          placeholder="Your name"
-          type="text"
-          minlength="3"
-          required
-        />
-        <label for="name" class="label-modal-flower" pattern="[A-Za-z]"
-          >Name</label
-        >
-      </div>
-      <div class="conteiner-form">
-        <input
-          id="email"
-          class="input-flower"
-          type="email"
-          title="Please enter your email"
-          placeholder="Your email"
-          required
-        />
-        <svg class="error-logo valid-logo" width="20" height="20">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#error-logo"></use>
-        </svg>
-        <svg class="success-logo valid-logo" width="20" height="20">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#success-logo"></use>
-        </svg>
-        <label for="email" class="label-modal-flower"> Email</label>
-      </div>
+      <label for="name" class="label-modal-flower">
+        <span class="conteiner-form">
+          <input
+            id="name"
+            class="input-flower input"
+            placeholder="Your name"
+            type="text"
+            name="username"
+            minlength="3"
+            required
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#success-logo"></use>
+          </svg>
+          <span class="label-name">Name</span>
+        </span></label
+      >
+      <label for="email" class="label-modal-flower">
+        <span class="conteiner-form">
+          <input
+            id="email"
+            class="input-flower input"
+            type="email"
+            name="email"
+            title="Please enter your email"
+            placeholder="Your email"
+            required
+          />
+          <svg class="error-logo valid-logo" width="20" height="20">
+            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#error-logo"></use>
+          </svg>
+          <svg class="success-logo valid-logo" width="20" height="20">
+            <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#success-logo"></use>
+          </svg>
+          <span class="label-name">Email</span>
+        </span>
+      </label>
+      <button type="submit" id="simulate"></button>
       <button
-        type="submit"
-        class="button-modal-send js-open-modal"
+        type="button"
+        class="button-send-modal js-open-modal"
         data-modal="3"
       >
         Send
@@ -646,7 +657,7 @@
     </form>
   </div>
 
-  <!-- Subscribe MOodal -->
+  <!-- Subscribe Modal -->
   <div class="subscribe-modal modal" data-modal="2">
     <button class="close-button js-modal-close" type="button">
       <svg class="modal-close-icon" width="18" height="18">
@@ -687,7 +698,7 @@
   </div>
 
   <div class="modal-thank modal" data-modal="3">
-    <button class="button-modal-close js-modal-close">
+    <button type="button" class="button-modal-close js-modal-close">
       <svg class="icon-close-store">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-close"></use>
       </svg>
@@ -696,21 +707,21 @@
       <source
         media="(min-width:720px)"
         srcset="/Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 1x, /Project_GR09/assets/img_desktop-tablet@1x-9d789e4b.png 2x"
+        type="image/png"
+        width="367"
       />
-      <source
-        media="(min-width:320px)"
+      <img
         srcset="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png 1x, /Project_GR09/assets/img_mob@2x-d9af1d23.png 2x"
+        src="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png"
+        alt="Flower"
+        width="188"
       />
-      <img src="/Project_GR09/assets/img_mob@1x-8ccbbfd9.png" alt="Flower" />
     </picture>
     <h3 class="title-thank">Thank you!</h3>
     <p class="title-item-thank">
       We have received your contact details and will reach you soon.
     </p>
-    <button
-      type="button button-store"
-      class="button-continue button-modal-close js-modal-close"
-    >
+    <button type="button" class="button-continue button-modal-send">
       Continue
     </button>
   </div>

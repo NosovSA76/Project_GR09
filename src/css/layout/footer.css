@@ -3,16 +3,17 @@
   background: #000000;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
   max-width: 320px;
-  padding-right: 16px;
+  padding-right: 14px;
   padding-left: 16px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 32px;
-  margin: auto;
+  gap: 32px;
+   margin: auto;
 }
 
 .footer-logo {
@@ -20,29 +21,28 @@
 }
 
 .footer-nav {
-  margin-right: 44px;
-  width: 116px;
+  width: 128px;
 }
 
+
 .footer-contacts {
-  margin-right: 32px;
+  /* margin-right: 32px; */
+}
+.footer-time{
+
 }
 
 .footer-title {
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(22 / 18);
-  color: #ffffff;
+   color: #ffffff;
   margin-bottom: 18px;
 }
 .footer-list {
-  font-family: 'Inter';
-  font-style: normal;
+   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(17 / 14);
   color: #ffffff;
 }
 .footer-item:not(:last-child) {
@@ -63,40 +63,38 @@
   }
   .container {
     max-width: 768px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding: 0 24px;
     flex-wrap: nowrap;
+    gap: 44px;
   }
-  .footer-nav {
-    width: 144px;
+.footer-nav {
+width: 144px;
   }
   .footer-time {
-    margin-right: 44px;
     width: 143px;
   }
-  .footer-contacts {
-    margin-right: 64px;
-  }
+
   .footer-br {
     display: none;
   }
 
   .footer-title {
     font-size: 20px;
-    line-height: calc(24 / 20);
+
   }
 
   .footer-list {
     font-size: 16px;
-    line-height: calc(19 / 16);
-  }
+   }
   .footer-icons-item:first-child {
     margin-bottom: 18px;
   }
 
   .footer-icons-list {
     display: block;
+     padding: 0 20px 0 16px;
   }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -104,25 +102,30 @@
     padding-top: 72px;
     padding-bottom: 72px;
   }
+   .container {
+    max-width: 1280px;
+        gap: 96px;
+  }
+
+  .footer-nav {
+padding-left: 124px;
+width: 230px;
+  }
   .container {
-    max-width: 1232px;
+    max-width: 1280px;
   }
 
   .footer-logo {
     display: block;
-    margin-right: 210px;
   }
+
   .footer-icon-logo {
     fill: #ffffff;
   }
-  .footer-nav {
-    width: 116px;
+  .footer-icons-list {
+
+     padding: 0 24px 0 94px;
   }
-  .footer-nav,
-  .footer-time {
-    margin-right: 96px;
-  }
-  .footer-contacts {
-    margin-right: 208px;
-  }
+
+
 }

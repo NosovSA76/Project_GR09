@@ -38,9 +38,9 @@
     background-color:#E86F54;
     z-index: 999;
     transform: translateX(200%);
-    transition: transform 250ms ease-in-out;
+    
     max-width: 100%;
-    display: none;
+    
   }
   .menu-toggle {
     position: absolute;
@@ -63,8 +63,9 @@
     fill: white;
   }
   .menu-container.is-open {
-    display: block;
+    
     transform: translateX(0);
+    transition: transform 250ms ease-in-out;
   }
   /* Mobile Nav List */
   .mobile-menu-list {

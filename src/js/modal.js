@@ -86,20 +86,8 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
     document.body.classList.remove('modal-open');
   });
-}); // end ready
+});
 
-// 1. На кнопку відкриття модалки доати клас js-open-modal, атрибут data-modal="1" (1 це номер модалки, значення довільне)
-
-// 2. В кінці боді створити один спільний бекдроп  з класом js-overlay-modal, в який вкласти усі модалки
-
-// 3. На кнопки закриття модалок повішати клас js-modal-close
-
-// 4. На саму модалку задати клас modal,
-// 	атрибут data-modal="1" (де 1 це довільне значення, але має співпадати з таким самим атрибутом на кнопці, яка відкривала цю модалку)
-
-// При відкритті модалки на неї і на бекдроп буде додаватися клас active, тому треба відповідні стилі додати на модалку і бекдроп. Є клас active, вони видимі, немає -- невидимі
-
-// Привязка однієї модалки до 2 кнопок
 const buttonToSimulateClick = document.querySelector('#imitation');
 const buttonToClick = document.querySelector('.hero-btn');
 

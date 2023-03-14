@@ -1,70 +1,50 @@
-
 #About{
   padding-top: 25px;
 }
-@media screen and (min-width: 768px) {
-#About {
-    padding-top: 75px;
-}
-}
-@media screen and (min-width: 1280px) {
-#About {
-    padding-top: 100px;
-}
-}
-
-.conteiner-about {
-  max-width: 480px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 16px;
-}
 
 @media screen and (min-width: 768px) {
-.conteiner-about {
-    min-width: 768px;
-    padding: 0 24px;
-}
+#About {
+    padding-top: 75px;}
 }
 
 @media screen and (min-width: 1280px) {
-.conteiner-about {
-    max-width: 1280px;
-  }
+#About {
+    padding-top: 100px;}
 }
+
 .flowers-img{
   margin: auto;
 }
+
 @media screen and (min-width: 768px) {
   .flowers-img {
-    width: 344px;
+    width: 344px;}
 }
-}
+
 @media screen and (min-width: 1280px) {
   .flowers-img {
-    width: 510px;
+    width: 510px;}
 }
-}
+
 .flo{
   font-weight: 400;
   font-size: 16px;
   width: 288px;
   margin: auto;
   margin: 32px auto 16px;
-
 }
+
 @media screen and (min-width: 768px) {
   .flo {
     width: 322px;
     font-size: 20px;
-    margin: 0;
-  }
+    margin: 0;}
 }
+
 @media screen and (min-width: 1280px) {
   .flo {
     width: 510px;
-    font-size: 22px;
-  }
+    font-size: 22px;}
 }
 
  @media screen and (min-width: 768px) {
@@ -72,13 +52,12 @@
     display: flex;
     align-items: center;
     gap: 54px;
-    margin-top: 30px;
-    }
-  }
+    margin-top: 30px;}
+}
+
  @media screen and (min-width: 1280px) {
   .flow{
     gap: 90px;
-    margin-top: 26px;
-    }
-        }
+    margin-top: 26px;}
+}
 

@@ -346,6 +346,11 @@
   transition: background-color 250ms linear;
 }
 
+.subscribe-button:disabled,
+.subscribe-form:invalid .subscribe-button {
+  pointer-events: none;
+}
+
 @media screen and (min-width: 768px) {
   .subscribe-button {
     display: block;

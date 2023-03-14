@@ -50,7 +50,6 @@
   background: rgba(232, 111, 84, 0.4);
   border-radius: 8px;
   pointer-events: none;
-
   transition: background 250ms linear;
 }
 
@@ -131,8 +130,6 @@ form:valid .button-send-modal:enabled {
   left: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 250ms linear, visibility 250ms linear,
-    transform 300ms linear;
   background-color: #fff;
   width: 272px;
   padding: 16px;
@@ -140,6 +137,8 @@ form:valid .button-send-modal:enabled {
   margin: auto;
   visibility: hidden;
   opacity: 0;
+   transition: opacity 250ms linear, visibility 250ms linear,
+    transform 300ms linear;
 }
 
 .modal-thank.active {
@@ -157,11 +156,13 @@ form:valid .button-send-modal:enabled {
   margin-top: 16px;
   font-size: 20px;
 }
+
 .title-item-thank {
   margin-top: 14px;
   font-size: 12px;
   color: #5c5c5c;
 }
+
 .button-continue {
   font-family: 'Montserrat';
   font-weight: 600;

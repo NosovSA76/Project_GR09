@@ -1,26 +1,4 @@
 
-.delivery-container {
-  padding: 0 16px;
-  margin: 0 auto;
-  max-width: 480px;
-
-}
-
-
-@media screen and (min-width: 768px) {
-  .delivery-container {
-    padding: 0 24px;
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .delivery-container {
-    padding: 0 24px;
-    max-width: 1280px;
-  }
-}
-
-
 .delivery-list {
   display: flex;
   flex-direction: column;
@@ -72,7 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
   font-size: 20px;
   border: 1px solid #000;
   border-radius: 50%;
@@ -90,7 +67,6 @@
 }
 
 .delivery-list-description {
-  font-weight: 500;
   font-size: 14px;
 }
 
@@ -109,22 +85,22 @@
 .delivery-flowers-picture {
   margin-top: 26px;
   width: 100%;
-  height: 135px;
   object-fit: cover;
   bottom: 60px;
   left: 0;
+  margin: auto;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .delivery-flowers-picture {
-    height: 264px;
     margin-top: 40px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .delivery-flowers-picture {
-  height: 391px;
   margin-top: 60px;
   max-width: 1280px;
   }

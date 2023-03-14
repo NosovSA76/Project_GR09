@@ -1,64 +1,62 @@
 
 .my-slick-prev{
   position: absolute;
-  bottom: -61px;
-  margin-right: 75px;
-  font-size: 30px;
+  bottom: -34px;
+  margin-right: 45px;
+  font-size: 24px;
 }
+
 .my-slick-next{
   position: absolute;
-  bottom: -61px;
-  margin-left: 75px;
-  font-size: 30px;
+  bottom: -34px;
+  margin-left: 45px;
+  font-size: 24px;
 }
-.conteiner-blog{
-max-width: 480px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .list-blog{
   max-width: 288px;
-margin: auto;
-display: flex;
-justify-content: center;
-margin-top: 32px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
 }
+
 .list-item-blog{
   margin-left: 16px;
-  font-weight: 500;
 }
 
 .title-item-blog{
-text-align: center;
-margin-top: 68px;
+  text-align: center;
+  margin-top: 68px;
+  margin-bottom: 24px;
 }
 
-
-
 @media  screen and (min-width:768px) {
-  .conteiner-blog{
-    max-width: 768px;
-    padding-left: 24px;
-    padding-right: 24px;
+  .my-slick-prev{
+    bottom: -54px;
+    margin-right: 75px;
+    font-size: 34px;
+  }
+  .my-slick-next{
+    bottom: -54px;
+    margin-left: 75px;
+    font-size: 34px;
   }
   .title-item-blog{
     margin-top: 87px;
     font-size: 32px;
+    margin-bottom: 32px;
   }
-
   .subscribe-button-blog{
     font-size: 28px;
     padding: 15px 71px;
     margin-top: 32px;
   }
-
   .button-blog{
     margin-top: 8px;
   }
   .list-blog{
-      max-width: 720px;
+    max-width: 720px;
     margin-top: 60px;
   }
   .list-item-blog{
@@ -72,13 +70,19 @@ margin-top: 68px;
   }
 }
 @media screen and (min-width:1280px) {
-  .conteiner-blog{
-    max-width: 1280px;
+  .my-slick-prev{
+    bottom: -64px;
+    margin-right: 85px;
+    font-size: 41px;
+  }
+  .my-slick-next{
+    bottom: -64px;
+    margin-left: 85px;
+    font-size: 41px;
   }
   .list-blog{
   max-width: 1280px;
   }
-
   .title-item-blog{
     margin-top: 104px;
   }

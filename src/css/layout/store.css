@@ -5,10 +5,7 @@
 }
 
 .store-container {
-  margin: 0 auto;
   min-width: 320px;
-  max-width: 480px;
-  padding: 0 16px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -17,14 +14,7 @@
 
 @media screen and (min-width: 768px) {
   .store-container {
-    padding: 0 24px;
-    max-width: 768px;
     gap: 60px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .store-container {
-    max-width: 1280px;
   }
 }
 

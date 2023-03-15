@@ -70,13 +70,13 @@
       <a class="header-link" href="#Delivery">Delivery</a>
       <a class="header-link" href="#Blog">Blog</a>
     </nav>
-    <button class="header-contact" type="button">
-      <a href="tel:+380631234567">
-        <svg class="icon-tel">
-          <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#tel"></use>
-        </svg>
-      </a>
-    </button>
+
+    <a class="header-contact" href="tel:+380631234567">
+      <svg class="icon-tel">
+        <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#tel"></use>
+      </svg>
+    </a>
+
     <button class="mobil-meny js-open-menu" type="button">
       <svg class="icon-mobil-menu">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#icon-Burger"></use>
@@ -118,20 +118,20 @@
     <h1 class="hero-title">ANEMONE</h1>
     <p class="hero-badge">flower studio</p>
     <button class="hero-btn js-open-modal" type="button" data-modal="1">
-      <div class="arrow-div">
+      <span class="arrow-div">
         <svg class="btn-arrow-mobil" width="28" height="28">
           <use id="btn-arrow" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-arrow-mobil"></use>
         </svg>
-      </div>
+      </span>
       <svg class="btn-text-mobil" width="76" height="76">
         <use id="btn-txt" href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-text-mobil"></use>
       </svg>
 
-      <div class="arrow-div">
+      <span class="arrow-div">
         <svg class="btn-arrow-tabl" width="58" height="58">
           <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-arrow-tabl"></use>
         </svg>
-      </div>
+      </span>
       <svg class="btn-text-tabl" width="145" height="150">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#btn-text-tabl"></use>
       </svg>
@@ -192,6 +192,7 @@
           />
           <img
             class="flowers-img"
+            alt="flowers"
             srcset="/Project_GR09/assets/img_mob@2x-a8882d73.jpg "
             src="/Project_GR09/assets/img_mob@1x-d3632135.jpg"
           />
@@ -509,9 +510,6 @@
       <svg class="footer-icon-logo" width="73" Height="57">
         <use href="/Project_GR09/assets/icons-8ba3c3c3.svg#Logo-mobil"></use>
       </svg>
-      <!-- <svg class="icon-logo-big">
-        <use href="/img/icons.svg#logo"></use>
-      </svg> -->
     </a>
     <nav class="footer-nav">
       <h3 class="footer-title">Navigation</h3>
@@ -538,7 +536,7 @@
       </p>
     </div>
     <address class="footer-contacts">
-      <h3 class="footer-title">Contacts</h3>
+      <p class="footer-title">Contacts</p>
       <ul class="footer-contacts-list footer-list">
         <li class="footer-contacts-item footer-item">
           <a href="tel:+380631234567" class="footer-contacts-link"

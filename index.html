@@ -669,6 +669,7 @@
             type="text"
             name="username"
             minlength="3"
+            pattern="^[a-zA-Z]+$"
             required
           />
           <svg class="error-logo valid-logo" width="20" height="20">
@@ -689,6 +690,7 @@
             name="email"
             title="Please enter your email"
             placeholder="Your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2, 4}$"
             required
           />
           <svg class="error-logo valid-logo" width="20" height="20">
@@ -732,6 +734,7 @@
             class="subscribe-input input input-js"
             type="email"
             name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2, 4}$"
             placeholder="Your email"
           />
           <svg class="error-logo valid-logo" width="20" height="20">

@@ -10,7 +10,7 @@ $(document).ready(function () {
           scrollTop: $(hash).offset().top,
         },
 
-        700,
+        1300,
         function () {
 
           window.location.hash = hash;

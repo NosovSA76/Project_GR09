@@ -27,3 +27,19 @@ $('.responsive').slick({
     // instead of a settings object
   ],
 });
+
+// AutoSlider
+
+const mySlickBlog = document.querySelector('.slick-track');
+const mySlickNext = document.querySelector('.my-slick-next');
+let intervalId;
+
+mySlickBlog.addEventListener('mouseover', () => {
+  intervalId = setInterval(() => {
+    mySlickNext.click();
+  }, 2000);
+})
+
+mySlickBlog.addEventListener('mouseout', () => {
+  clearInterval(intervalId);
+});
